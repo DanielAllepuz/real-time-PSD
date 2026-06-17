@@ -16,6 +16,7 @@ if rt_psd.new_estimate:
   freqs, psd = rt_psd.get_PSD() # Get the PSD estimate
 else:
   # You can get the PSD estimate even if it has not been updated from the previous data, as long as at least nperseg values have been fed to RealTimePSD
+  pass
 ```
 
 ## Parameters
