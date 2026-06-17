@@ -5,15 +5,15 @@ from scipy.signal import detrend
 import matplotlib.pyplot as plt
 
 class RealTimePSD():
-    def __init__(self, samplerate, nperseg, noverlap=None, window='hann', onesided=True, detrend='constant'):
-        self.samplerate = samplerate
+    def __init__(self, fs, nperseg=256, noverlap=None, window='hann', return_onesided=True, detrend='constant'):
+        self.samplerate = fs
         self.nperseg = int(nperseg)
         self.overlap = int(noverlap) if noverlap is not None else self.nperseg//2
         self.step = self.nperseg - self.overlap
         self.detrend = detrend
 
         self.window = get_window(window, self.nperseg)
-        self.onesided = onesided
+        self.onesided = return_onesided
         
         self.factor = 1 / (self.samplerate * np.sum(self.window**2))
         if self.onesided:
