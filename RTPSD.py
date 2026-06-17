@@ -2,7 +2,6 @@
 import numpy as np
 from scipy.signal.windows import get_window
 from scipy.signal import detrend
-import matplotlib.pyplot as plt
 
 class RealTimePSD():
     def __init__(self, fs, nperseg=256, noverlap=None, window='hann', return_onesided=True, detrend='constant'):
