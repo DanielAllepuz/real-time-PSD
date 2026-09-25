@@ -1,5 +1,5 @@
 # Real Time PSD
-A small Python class that calculates the Power Spectral Density as you feed data to it
+A small Python class that calculates the Power Spectral Density as you feed it data.
 
 ## Installation
 There is no module at this moment, just copy `RTPSD.py` to your project folder.
