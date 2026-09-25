@@ -35,4 +35,4 @@ The following parameters of [`scipy.signal.welch`](https://docs.scipy.org/doc/sc
 * ~`average`~: the mean is used, in contrast to the median (default of [`scipy.signal.welch`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.welch.html)).
 
 ## Testing
-The code is tested against [`scipy.signal.welch`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.welch.html). Running `test.py` asserts that the result of `RealTimePSD` and `scipy.signal.welch` are the same.
+The code is tested against [`scipy.signal.welch`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.welch.html). Running `test.py` asserts that the result of `RealTimePSD` and `scipy.signal.welch` is the same.
